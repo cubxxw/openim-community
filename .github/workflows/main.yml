@@ -20,6 +20,9 @@ jobs:
         with:
           go-version: 1.16
 
+      - name: Initialize Go module
+        run: go mod init module
+
       - name: Build
         run: go build -v ./...
 
