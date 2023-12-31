@@ -43,5 +43,6 @@ jobs:
         with:
           title: Bug reports for links in OpenIM docs
           content-filepath: ./lychee/out.md
+          token: ${{ secrets.GITHUB_TOKEN }}
           labels: kind/documentation, triage/unresolved, report
           token: ${{ secrets.BOT_GITHUB_TOKEN }}
